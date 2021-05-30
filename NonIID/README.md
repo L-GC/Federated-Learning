@@ -15,7 +15,7 @@
 
 ### 1.2 分类
 
-在文献 [Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977) 中，作者以分类任务为例，数据包括图像和类别标签，分别用$$x$$和$$y$$表示。针对客户端之间的分布差异，将Non-IID分为下面五种情况：
+在文献 [Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977) 中，作者以分类任务为例，数据包括图像和类别标签，分别用$x$和$y$表示。针对客户端之间的分布差异，将Non-IID分为下面五种情况：
 
 - **Feature Distribution Skew (Covariate Shift)**：特征分布偏移，具体指的是$P_k(x)$不一致，但是$P_k(y|x)$。比如：不同人的字迹差异很大，客户端A写的“联邦学习”和客户端B写的“联邦学习”都应该被识别为“联邦学习”。
 - **Label Distribution Skew (Prior Probability Shift)**：标签分布偏移，具体指的是$P_k(y)$不一致，但是$P_k(x|y)$ 一致。例如：标签的分布因客户的不同而不同；袋鼠只在澳大利亚内；一个人的脸只出现在世界范围内的某一地区
